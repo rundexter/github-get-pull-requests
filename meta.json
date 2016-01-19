@@ -2,7 +2,6 @@
  * Metadata describing the module operation
  */
 {
-    //Required. Inputs the module expects.
     "inputs": [
       {
         "id": "owner",
@@ -13,8 +12,6 @@
         "title":"Repo"
       }
     ],
-    //Required. Outputs the module emits.
-
     "outputs": [
       {
         "id": "self",
@@ -49,7 +46,9 @@
         "title":"statuses"
       }
     ],
+    "providers": [{
+        "name": "github"
+    }],
     "icon": "github",
-    /* Required.A display name for the module */
     "title": "GitHub Get Pull Requests"
 }
